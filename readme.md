@@ -11,3 +11,5 @@ Kubernetes Raspberry The Hard Way
 - [扩展多节点k8s集群](/docs/05-扩展多节点k8s集群.md)
 - [实验以及验证](/docs/06-实验以及验证.md)
 - [清空资源](/docs/07-清空资源.md)
+- [普通异常处理](/docs/08-普通异常处理.md)
+- [coredns异常处理](/docs/09-coredns异常处理.md)
