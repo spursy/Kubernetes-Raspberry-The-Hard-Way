@@ -13,3 +13,5 @@ Kubernetes Raspberry The Hard Way
 - [清空资源](/docs/07-清空资源.md)
 - [普通异常处理](/docs/08-普通异常处理.md)
 - [coredns异常处理](/docs/09-coredns异常处理.md)
+- [镜像翻墙问题](/docs/10-镜像翻墙问题.md)
+- [花生壳透传树莓派](/docs/11.%20花生壳透传树莓派.md)
