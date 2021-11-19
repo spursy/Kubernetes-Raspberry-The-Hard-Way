@@ -156,7 +156,7 @@ sudo systemctl start kubelet
 sudo systemctl start docker
 ```
 
-
+*下一篇文章[镜像翻墙问题](/docs/10-镜像翻墙问题.md)*
 
 
 
