@@ -1,5 +1,9 @@
 # Prometheus
 
+**Prometheus Dashboard**
+
+![Prometheus Dashboard](/shot_screen/monitoring/prometheus-dashboard.png)
+
 ### 创建 monitoring 空间
 
 ```bash
