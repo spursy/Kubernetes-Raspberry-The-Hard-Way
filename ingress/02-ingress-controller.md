@@ -29,13 +29,17 @@ k apply -f ./resource/ingress-controller/validation-webhook.yaml
 **4.Deploy Jobs To Update Webhook Certificates**
 
 ```bash
+// 宿主机上替换镜像
+sudo docker pull dyrnq/kube-webhook-certgen:v1.1.1
+sudo docker tag dyrnq/kube-webhook-certgen:v1.1.1 k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
+
 k apply -f ./resource/ingress-controller/jobs.yaml
 ```
 
 **5.Create Ingress Controller Roles & Service Account**
 
 ```bash
-k apply -f ./resource/ingress-controller/jobs.yaml
+k apply -f ./resource/ingress-controller/ingress-service-account.yaml
 ```
 
 **6.Create Configmap**
@@ -59,6 +63,10 @@ k apply -f ./resource/ingress-controller/ingress-class.yaml
 **9.Create Ingress Controller Deployment**
 
 ```bash
+// 宿主机上替换镜像
+sudo docker pull willdockerhub/ingress-nginx-controller:v1.1.1
+sudo docker tag willdockerhub/ingress-nginx-controller:v1.1.1 k8s.gcr.io/ingress-nginx/controller:v1.1.1
+
 k apply -f ./resource/ingress-controller/deployment.yaml
 ```
 
