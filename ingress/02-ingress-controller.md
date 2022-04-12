@@ -36,6 +36,8 @@ sudo docker tag dyrnq/kube-webhook-certgen:v1.1.1 k8s.gcr.io/ingress-nginx/kube-
 k apply -f ./resource/ingress-controller/jobs.yaml
 ```
 
+*for more information, please refer to [CA Injector](https://cert-manager.io/docs/concepts/ca-injector/)*
+
 **5.Create Ingress Controller Roles & Service Account**
 
 ```bash
