@@ -322,6 +322,25 @@ curl -XGET demo.apps.mlopshub.com
 
 ![ingress-dns](/shot_screen/ingress/ingress-dns.png)
 
+**verify ingress dns in multi node**
+
+- create NodePort svc for ingress-nginx-controller
+  
+![ingress-nodeport-svc](/shot_screen/ingress/ingress-nodeport-svc.png)
+
+- get ingress-nginx-controller host mac
+
+![ingress-controller-node](/shot_screen/ingress/ingress-controller-node.png)
+
+![ingress-node-ip](/shot_screen/ingress/ingress-node-ip.png)
+
+- verify ingress host url
+
+```bash
+curl -H "host:demo.apps.mlopshub.com" 192.168.31.52:31152
+```
+
+![](/shot_screen/ingress/ingress-host-test.png)
 
 **参考文档**
 
